@@ -1,0 +1,8 @@
+# mongodb数据源配置
+Spring:
+  data:
+    mongodb:
+      uri: mongodb://dba:hhu2018cs@121.37.153.199:37018/testdb1
+      database: testdb1
+      #uri: mongodb://localhost:27017/webcom
+      #database: webcom

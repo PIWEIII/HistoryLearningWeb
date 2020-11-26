@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>用户登录</title>
+</head>
+<body>
+<div style="margin-left: 600px;margin-top: 300px;">
+    <p style="color: red"; th:text="${msg}" th:if="${not #strings.isEmpty(msg)}"></p>
+    <form action="/login" method="get">
+        <p>Username:<input type="text" name="username" placeholder="请输入用户名"></p>
+        <p>Password:<input type="text" name="password" placeholder="请输入密码"></p>
+        <input type="submit" placeholder="提交">
+    </form>
+</div>
+</body>
+</html>
